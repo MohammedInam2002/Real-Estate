@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #2f37394b;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+ }
+ .navbar-nav .nav-item a{
+    color:white !important;
+ }
+ .navbar a:hover{
+    color: crimson !important;
+ }
+ .property{
+    width: 100%;
+    min-height: 620px;
+    background-color: #BDE8CA;
+    padding: 40px 30px 20px 30px ;
+ }
+ .head{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    border-bottom: 2px solid black;
+ }
+ .head h1{
+    width: 60%;
+    font-size: 40px;
+
+ }
+ .head p{
+    width: 30%;  
+ }
+ .btns{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+ }
+ .sub-btns{
+    display: flex;
+    gap: 10px;
+ }
+ .sub-btns button{
+    background-color:white;
+    color: gray;
+ }
+ .sub-btns button:hover{
+    background-color: blue;
+    color: aliceblue;
+ }
+  .btn-b{
+    background-color: black;
+    color: aliceblue;
+ }
+ .btn-b:hover{
+     background-color: white;
+     
+ }
+ .card-icon i{
+    color:rgb(214, 18, 18);
+ }
+ .card-icon{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+ }
+ .card-body .btn{
+     color: rgb(42, 114, 247);
+     background-color: rgb(209, 211, 212);
+ }
+ .card{
+    width: 300px;
+    height: 360px;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5 ease-in-out;
+ }
+ .card:hover{
+    transform: translateY(20px);
+ }
+ .card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+ }
+ .card:hover::before{
+    opacity: 1;
+ }
+ .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+ .card .card-body{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    top: 50%;
+    transition: 0.5 all;
+
+ }
+ .card:hover .card-body{
+    opacity: 1;
+    transform: translateY(0);
+ }
+ @media only screen and (min-width: 300px) and (max-width:600px){
+    .head{
+        flex-direction: column;
+    }
+    .btns{
+        flex-direction: column;
+    }
+    .sub-btns{
+        flex-direction: column;
+    }
+ } 
+ .ads{
+    padding-top: 40px;
+    text-align: center;
+    align-items: center;
+
+ }
+ .ads-icons{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .ads-icons i{
+    width: 50px;
+    height: 50px;
+    padding-top:20px ;
+    background-color: #fff;
+    position: relative;
+ }
+
+/* .ads-icons i:hover{
+    background-color:black;
+    color: white;
+} */
+ .line {
+    position: absolute;
+    margin-top: 40px;
+    left: 20%;
+    width: 60%;
+    border-bottom: 2px solid black;
+ }
+ .ads-image {
+    margin: auto;
+    padding-top: 20px;
+    width: 80%;
+    height: 300px;
+    position: relative;
+ }
+ .ads-image img{
+    width: 100%;
+    height: 100%;
+ }
+ .ads-box {
+    width: 280px;
+    height: 240px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: all 1s;
+    animation-name: box;
+    animation-duration: 2s;
+
+ }
+ .ads-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
+ }
+ @keyframes box{
+  0%{transform: scale(0);}
+  100%{transform: scale(1);}
+ }
+ @media only screen and (min-width: 300px) and (max-width:600px){
+    .ads-box{
+        position: unset;
+        margin-top: 10px;
+    }
+    .property-images .card{
+      flex-grow: 1;
+    }
+ }
+
+

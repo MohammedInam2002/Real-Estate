@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #2f37394b;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+ }
+ .navbar-nav .nav-item a{
+    color:white !important;
+ }
+ .navbar a:hover{
+    color: crimson !important;
+ }
+ .contact{
+    width: 100%;
+    padding: 60px 10px 10px 10px;
+ }
+ .contact-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+ }
+ .contact-sub1{
+    width: 50%;
+ }
+ .contact-sub-content{
+    width: 400px;
+    min-height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    left: 60%;
+ }
+  .contact-sub-content h1{
+    font-size: 35px;
+    font-weight: bold;
+ }
+ .contact-sub-content a {
+    color: rgb(41, 74, 136) !important; 
+ }
+ .contact-sub2{
+    width: 50%;
+ }
+ .contact-sub2 img{
+    width: 100%;
+    height: 100%;
+ }
+ .contact-type{
+    width: 100%;
+    /* margin-top: 60px; */
+    padding: 80px 20px 80px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: lightblue;
+ }
+ .type-box{
+    width: 300px;
+    height: 200px;
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+    background-color: white;
+ }
+ .type-box h5{
+    margin-top: 15px;
+ }
+ .type-box p{
+    color: gray;
+ }
+ .whole-contact{
+    background-color: black;
+ }
+ .contact-detail{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .contact-text{
+    width: 40%;
+    padding: 40px 30px 20px 110px ;
+    color: white;
+ }
+ .customer-detail{
+    width: 60%;
+    background-color: white;
+    padding: 60px 20px 20px 30px;
+ }
+ form{
+    width: 80%;
+   
+ }
+ .customer-detail input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+   border: none;
+   
+ }
+ .customer-detail textarea{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border: none; 
+ }
+  form .placeholder{
+    color: gray;
+ }
+ .customer-detail button{
+    width: 90px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #7393B3;
+    color: white;
+    font-weight: bold;
+ }
+ .contact-text   a {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(41, 74, 136) !important; 
+ }
+ .contact-text h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0 20px 0;
+ }
+ .contact-text   p {
+    font-size: 19px;
+    font-weight: 200;
+ }
+ .contact-map{
+    width: 80%;
+    margin: auto;
+    padding: 80px 20px ;
+ }
+ .contact-map iframe{
+    width: 100%;
+ }
+ .end-detail{
+    padding: 90px ;
+    background:black;
+    backdrop-filter: blur(50px);
+    color: white;
+ }
+ .row a {
+    font-size: 19px ;
+    font-weight: bold;
+    margin-left: 10px;
+ }
+.row p {
+    margin-left: 20px;
+    
+}
+.row input{
+    border: none;
+    height: 40px;
+    border-bottom: 2px solid gray;   
+}
+
+.row button{
+    margin-top: 10px;
+    border: none;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px
+}
+.end-detail h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.help-detail{
+   padding-top:40px ;
+}
+.help-head{
+   width: 40%;
+   margin: auto;
+   text-align: center;
+   color: white;
+   
+}
+.help-content{
+   display: flex;
+   padding-top:30px ;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-evenly;
+   color: white;
+
+}
+.contact-line{
+   border-bottom: 2px solid gray;
+}
+.help-content i{
+   margin-left: 10px;
+}
+@media only screen and (min-width: 300px) and (max-width:800px){
+   .contact-content{
+      flex-direction: column;
+      flex-grow: 1;
+   }
+   .contact-sub1{
+      width: 100%;
+   }
+   .contact-sub-content{
+      position: static;
+      width: 280px;
+      margin-bottom: 20px;
+   }
+   .contact-type{
+      flex-direction: column;
+      flex-grow: 1;
+   }
+   .contact-detail{
+      flex-direction: column;
+      flex-grow: 1;
+   }
+   .row input{
+      width: 60px;
+   }
+   .help-content{
+      flex-direction: column;
+      flex-grow: 1;
+   }
+}
+.footer-cred{
+   width: 100%;
+   height: 50px;
+   background-color: #000;
+   text-align: center;
+   color: #fff;
+   padding-top: 15px;
+   text-transform: uppercase;
+ }

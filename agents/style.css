@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #2f37394b;
+  backdrop-filter: blur(5px);
+    z-index: 10;
+ }
+ .navbar-nav .nav-item a{
+    color:white !important;
+ }
+ .navbar a:hover{
+    color: crimson !important;
+ }
+ .agents{
+    width: 100%;
+    min-height: 620px;
+    background-color: #021526;
+    padding: 40px 30px 20px 30px ;
+ }
+ .agent-head{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+ }
+ .agent-subhead1{
+    width: 30%;
+ }
+ .agent-subhead1 h1{
+     font-size: 40px;
+     color: white;
+     text-shadow: 5px 5px 5px yellow;
+ }
+ .agent-subhead1 p{
+    font-size: 18px;
+    color: white;
+}
+ .agent-subhead2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+ }
+ .agent-subhead2 :nth-child(1){
+    width: 45% ;
+    margin-right: 10px;
+    
+ }
+ .agent-subhead2 :nth-child(2){
+    width: 45% ;
+    
+ }
+ .agent-subhead2 .btn{
+    width: 50% ;
+    font-weight: bold;
+    background-color: cadetblue;
+    color: white;
+    box-shadow: 5px 5px 5px  rgb(139, 228, 231);
+ }
+ .agent-subhead2 select{
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    background-color: cadetblue;
+    color: white;
+    box-shadow: 5px 5px 5px  rgb(139, 228, 231);
+ }
+ .agent-image{
+    padding-top: 10px;
+ }
+ .agent-image .card p{
+    color: gray;
+ }
+ .agent-image .card span{
+    color:black;
+    font-size:18px ;
+ }
+ .agent-image .card{
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: transparent !important ;
+ }
+ .card-img-top{
+    position: relative;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transform: translateY(100px);
+    z-index: 1;
+    
+}
+.agent-image .card:hover  .card-img-top{
+    transform: translateY(0);
+}
+.card-body{
+    position: relative;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-color: aliceblue;
+    transform: translateY(-130px);
+    
+}
+.agent-image .card:hover .card-body{
+    transform: translateY(0);
+}
+.card-img-top{
+    box-shadow: 0px 0px 15px white;
+}
+.card-text{
+    border-bottom: 2px solid gray;
+    width: 100%;
+}
+.website{
+    width: 100%;
+    padding: 40px 10px 10px 10px;
+    
+}
+.web-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sub-head{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sub-btn{
+    width: 30%;
+    text-align: end;
+}
+.sub-head h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px yellow;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.sub-head p{
+    color: white;
+}
+.sub-btn .btn{
+    font-weight: bold;
+    background-color: cadetblue;
+    color: white;
+    box-shadow: 5px 5px 5px  rgb(139, 228, 231);
+}
+.news{
+    padding-top: 100px;
+}
+.news-add .btn{
+    margin: 10px 10px 10px 10px;
+    color: rgb(0, 47, 255);
+    text-decoration: underline;
+}
+.news-add{
+    transition: 1s all;
+}
+.news-add p{
+    color: gray;
+}
+.news-add:hover{
+    transform: scale(1.1);
+}
+.card-top {
+    position: relative;
+    top: 90px;
+    z-index: 3;
+    transition: all 1s;
+}
+.news-add:hover .card-top{
+    top: -50px; 
+}
+@media only screen and (min-width: 300px) and (max-width:600px){
+    .agent-head{
+        flex-direction: column;
+    }
+    .agent-subhead1{
+        flex-direction: column;
+    }
+    .web-head{
+        flex-direction: column;
+    }
+    .sub-head{
+        flex-direction: column;
+    }
+    .agent-image .card{
+        flex-direction: column;
+    }
+    .news-add {
+        flex-direction: column;
+    }
+ } 
